@@ -21,10 +21,6 @@
     "ecmaVersion": 2017,
     "sourceType": "module"
   },
-  "plugins": [
-    "import",
-    "compat"
-  ],
   "settings": {
     "import/core-modules": [],
     "import/ignore": [
@@ -41,7 +37,6 @@
       "exports": "always-multiline",
       "functions": "ignore"
     }],
-    "no-console": "off",
-    "compat/compat": 2
+    "no-console": "off"
   }
 }
