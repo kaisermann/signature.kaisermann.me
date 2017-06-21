@@ -1,0 +1,36 @@
+{
+  "project": {
+    "repo": "git@github.com:kaisermann/projeto-signature.kaisermann.me.git",
+    "type": "php",
+    "fileStructure": {
+      "shared": [
+        [".well-known"]
+      ]
+    },
+    "cmds": {
+      "install": [],
+      "afterDeploy": []
+    },
+    "maxReleases": 5
+  },
+  "hosts": {
+    "bottura": {
+      "hosts": [
+        "bottura"
+      ],
+      "name": "signature.kaisermann.me",
+      "projectDir": "/var/www",
+      "projectPublicDir": "htdocs",
+      "webRootDir": "",
+      "hostnames": "signature.kaisermann.me www.signature.kaisermann.me",
+      "webServerUser": "www-data",
+      "webServerGroup": "www-data",
+      "services": {
+        "toRestart": [],
+        "toReload": [
+          "nginx"
+        ]
+      }
+    }
+  }
+}
