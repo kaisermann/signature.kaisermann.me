@@ -1,7 +1,7 @@
 @font-face {
 		font-family: 'Anders';
-		src: url($kPath$/Anders_gdi.eot);
-		src: url($kPath$/Anders_gdi.eot?#iefix) format('embedded-opentype'), url($kPath$/Anders_gdi.woff) format('woff'), url($kPath$/Anders_gdi.ttf) format('truetype'), url($kPath$/Anders_gdi.svg#Anders-Regular) format('svg');
+		src: url(https://signature.kaisermann.me/assets/Anders_gdi.eot);
+		src: url(https://signature.kaisermann.me/assets/Anders_gdi.eot?#iefix) format('embedded-opentype'), url(https://signature.kaisermann.me/assets/Anders_gdi.woff) format('woff'), url(https://signature.kaisermann.me/assets/Anders_gdi.ttf) format('truetype'), url(https://signature.kaisermann.me/assets/Anders_gdi.svg#Anders-Regular) format('svg');
 		font-weight: 400;
 		font-style: normal;
 		font-stretch: normal;

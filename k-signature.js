@@ -157,7 +157,6 @@
     var sigStyle = document.createElement('style')
 
     css = css
-      .replace(/url\(\$kPath\$/g, 'url(' + path + 'assets')
       .replace(/\$bc\$/g, options.bc)
       .replace(/\$tc\$/g, options.tc)
       .replace(/\$position\$/g, options.position)
