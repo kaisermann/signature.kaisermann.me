@@ -1,0 +1,78 @@
+.k-signature
+	display: inline-block
+	position: absolute
+	background-color: #353535
+	color: #fff
+	z-index: 10
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+	font-weight: 300
+	font-style: normal
+	text-align: left
+	line-height: 1
+	letter-spacing: 0
+	transition: all 0.3s ease
+	opacity: 0.6
+
+	span
+		display: inline-block
+
+	*
+		padding: 0
+		margin: 0
+		box-sizing: border-box
+
+	&:hover
+		opacity: 1
+
+	&:hover
+	&.is-visible
+		.k-signature__rest
+			opacity: 1
+			visibility: visible
+
+		.k-signature__by
+			transform: rotateX(0deg)
+			transition: transform 0.3s 0.3s ease
+
+		.k-signature__brand
+			width: 95px
+
+.k-signature__by
+	position: absolute
+	z-index: 11
+	background-color: inherit
+	font-size: 8px
+	height: 14px
+	padding: 3px 4px
+	top: -14px
+	left: 0
+	transition: transform 0.3s ease
+	transform-origin: 50% 100%
+	transform: rotateX(90deg)
+
+.k-signature__brand
+	overflow: hidden
+	width: 25px
+	height: 25px
+	position: relative
+	transition: all 0.3s ease
+
+.k-signature__main
+.k-signature__rest
+	position: absolute
+	bottom: 4px
+	overflow: hidden
+
+.k-signature__main
+	font-size: 14px
+	height: 15px
+	left: 8px
+
+.k-signature__rest
+	transition: opacity 0.3s ease, visibility 0.3s ease
+	opacity: 0
+	visibility: hidden
+	font-size: 10px
+	left: 19px
+	letter-spacing: 1px
+	height: 12px
