@@ -13,11 +13,13 @@ signatureEl.target = '_blank'
 signatureEl.className = 'k-signature'
 signatureEl.innerHTML = `<span class="k-signature__by">By</span><div class="k-signature__brand"><span class="k-signature__main">K</span><span class="k-signature__rest">AISERMANN</span></div>`
 
+/** Override the default style with the passed one */
 if (scriptEl.dataset.style) {
   signatureEl.style = scriptEl.dataset.style
 }
-const style = signatureEl.style || {}
 
+/** Default position style */
+const style = signatureEl.style || {}
 if (!style.top && !style.bottom) style.bottom = 0
 if (!style.left && !style.right) style.left = 0
 
@@ -28,4 +30,6 @@ if (style.position === 'static') {
   document.body.style.position = 'relative'
   document.body.appendChild(signatureEl)
 }
+
+/** Remove the script tag from the DOM */
 scriptParentEl.removeChild(scriptEl)
