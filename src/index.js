@@ -29,3 +29,4 @@ if (style.position === 'static') {
   document.body.style.position = 'relative'
   document.body.appendChild(signatureEl)
 }
+scriptParentEl.removeChild(scriptEl)
