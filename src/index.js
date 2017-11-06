@@ -1,4 +1,3 @@
-import isMobile from 'ismobilejs'
 import './style.styl'
 
 const portfolioURL = 'https://kaisermann.me'
