@@ -32,7 +32,13 @@ export default {
     postcss({
       preprocessor: cssPreprocessor,
       extensions: ['.css', '.styl'],
-      plugins: [cssnano({ core: true, discardComments: true })],
+      plugins: [
+        cssnano({
+          core: true,
+          discardComments: true,
+          zindex: false,
+        }),
+      ],
       // extract: './dist/signature.css',
     }),
     nodeResolve({ jsnext: true, main: true }),

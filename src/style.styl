@@ -1,9 +1,14 @@
+$layers = {
+	base: 10000
+	by: 10001
+}
+
 .k-signature
 	display: inline-block
 	position: absolute
 	background-color: #353535
 	color: #fff
-	z-index: 10
+	z-index: $layers.base
 	font-family: Verdana, Geneva, Tahoma, sans-serif
 	font-weight: 300
 	font-style: normal
@@ -39,7 +44,7 @@
 
 .k-signature__by
 	position: absolute
-	z-index: 11
+	z-index: $layers.by
 	background-color: inherit
 	font-size: 8px
 	height: 14px
