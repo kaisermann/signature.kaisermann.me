@@ -1,6 +1,6 @@
 # signature.kaisermann.me
 
-> Personal signature script.
+> Personal centralized website signature helper script.
 
 ## Usage: 
 
