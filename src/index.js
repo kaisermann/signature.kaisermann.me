@@ -1,14 +1,12 @@
 import './style.styl'
 
-const portfolioURL = 'https://kaisermann.me'
-
 const scriptEl =
   document.currentScript || document.getElementById('k-signature')
 const scriptParentEl = scriptEl ? scriptEl.parentNode : document.body
 
 /** Create the signature element */
 const signatureEl = document.createElement('a')
-signatureEl.href = portfolioURL
+signatureEl.href = 'https://kaisermann.me'
 signatureEl.target = '_blank'
 signatureEl.className = 'k-signature'
 signatureEl.innerHTML = `<span class="k-signature__by">By</span><div class="k-signature__brand"><span class="k-signature__main">K</span><span class="k-signature__rest">AISERMANN</span></div>`
