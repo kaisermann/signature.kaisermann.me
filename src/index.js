@@ -6,6 +6,7 @@ const scriptParentEl = scriptEl ? scriptEl.parentNode : document.body
 
 /** Create the signature element */
 const signatureEl = document.createElement('a')
+signatureEl.rel = 'noopener'
 signatureEl.href = 'https://kaisermann.me'
 signatureEl.target = '_blank'
 signatureEl.className = 'k-signature'
