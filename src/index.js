@@ -25,7 +25,7 @@ if (!style.left && !style.right) style.left = 0
 if (style.position === 'static') {
   scriptParentEl.insertBefore(signatureEl, scriptEl)
 } else {
-  document.body.style.position = 'relative'
+  // document.body.style.position = 'relative'
   document.body.appendChild(signatureEl)
 }
 
